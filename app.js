@@ -1,5 +1,6 @@
 import React from 'react'
 import { render } from 'react-dom'
-import {SamplePage} from './pages/SamplePage.jsx'
+import {TeamsPage  } from './pages/TeamsPage.jsx'
+import teamDetails from './lib/teamDetails'
 
-render(<SamplePage />, document.getElementById('root'))
+render(<TeamsPage teams={teamDetails.team} />, document.getElementById('root'))
